@@ -2,21 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 7vh;
+  background: rgb(250, 158, 53);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.mynav-links {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) repeat(3, auto);
+  justify-content: space-around;
+  list-style: none;
+}
+
+.mynav-links>a {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.text-borders:first-of-type {
+  border-left: 10px solid #FFC300;
+  background-color: #F7DC6F;
+  color: black;
+}
+
+.text-borders {
+  border-left: 10px solid rgb(0, 62, 119);
+  background-color: rgb(23, 99, 161);
+  color: white;
+}
+
+.text-borders:last-of-type {
+  border-left: 10px solid rgb(74, 0, 117);
+  background-color: rgb(140, 21, 219);
+}
+
+u {
+  color: orange;
+}
+
+.myc {
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 5px solid lightcoral;
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: blanchedalmond;
+}
+
+.myitem {
+  padding: 20px 50px;
+  border-radius: 20px;
+  border: 5px solid blue;
+  background-color: cornflowerblue;
 }
